@@ -12,7 +12,10 @@ int main() {
 
   int determinant = (InverseMat[0][0] * InverseMat[1][1]) - (InverseMat[1][0] * InverseMat[0][1]);
 double temp = (1/determinant);
-  
+  if(determinant == 0){
+    cout << "The inverse does not exist, your matrix is a singular matrix." << endl;
+    }
+
   }
 
 
